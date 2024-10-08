@@ -404,3 +404,78 @@ button:hover {
 .cart-field .image-animate.active {
     display: none;
 }
+
+input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #999;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    transition: background 0.2s ease;
+  }
+
+  /* Custom radio button when selected */
+  input[type="radio"]:checked {
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+
+  /* Inner dot for selected state */
+  input[type="radio"]:checked::before {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+    margin: 4px;
+  }
+
+  /* Label styling */
+  label {
+    font-size: 16px;
+    margin-left: 8px;
+    cursor: pointer;
+  }
+
+  /* Hover effect */
+  input[type="radio"]:hover {
+    border-color: #007bff;
+  }
+
+  /* Custom radio group styling */
+  .radio-group {
+    margin: 20px 0;
+  }
+
+  .radio-group label {
+    margin-right: 20px;
+  }
+
+
+  
+.rating {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.rating label {
+    flex: 1;
+    padding: 5px;
+    background-color: #f0f4f8;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.rating input[type="radio"] {
+    display: none;
+}
+.rating input[type="radio"]:checked + label {
+    background-color: #4A90E2;
+    color: white;
+}
